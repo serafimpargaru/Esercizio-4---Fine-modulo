@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #757575;
+  background-color: white;
 }
 
 .navbar {
@@ -42,8 +43,8 @@ body {
 }
 
 .account-btn {
-  background-color: red;
-  font-size: 15pt;
+  background-color: #F4511E;
+  font-size: 10pt;
   border-radius: 50%;
   color: white;
   width: 23px;
@@ -87,7 +88,7 @@ body {
   cursor: pointer;
 }
 
-#bold {
+#bold-underline {
   color: #323232;
   border-bottom: 1px solid;
 }
@@ -116,6 +117,11 @@ body {
 .author div {
   margin: 0;
   font-size: 12px;
+}
+
+#bold {
+  color: #323232;
+  border-bottom: none;
 }
 
 .article-content {
@@ -197,7 +203,6 @@ ul #react {
 .social {
   width: 25%;
   height: 3000vh;
-  /* background-color: blue; */
   margin-right: 10%;
 }
 
@@ -205,8 +210,142 @@ ul #react {
   border: none;
 }
 
+.twitter-connection {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px #e6e6e6 solid;
+  gap: 15px;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
 .medium-twitter-container {
-    width: 100%;
-    height: 200px;
-    background-color: blueviolet;
+  width: 100%;
+  height: 55px;
+}
+
+.description-social {
+  text-align: center;
+  font-size: 14px;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 2px;
+}
+
+#mdm {
+  width: 35px;
+  height: 35px;
+  color: #292929;
+}
+
+#plus {
+  width: 15px;
+  height: 15px;
+}
+
+#twtr {
+  width: 20px;
+  height: 20px;
+  color: #349ff1;
+}
+
+.twtr-btn {
+  display: flex;
+  gap: 8px;
+  padding-block: 5px;
+  padding-inline: 15px;
+  border-radius: 200px;
+  border: 1px #323232 solid;
+  background-color: transparent;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.twtr-btn div {
+  text-align: center;
+}
+
+.twitter-connection .description-social,
+a {
+  color: #757575;
+  font-size: 12px;
+}
+
+.topics-container {
+    display: flex;
+    flex-direction: column;
+    margin-block: 25px;
+    gap: 15px;
+}
+
+.sub-titles {
+    color: #292929;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.categories {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.categories button {
+    font-size: 12px;
+    padding-inline: 15px;
+    padding-block: 10px;
+    border-radius: 200px;
+    border: none;
+    background-color: #F2F2F2;
+    color: #292929;
+    cursor: pointer;
+}
+
+.guest {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.guest img {
+    width: 15%;
+    height: 15%;
+}
+
+.name-job {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.name-job div {
+    font-size: 10px;
+}
+
+#name {
+    font-size: 12px;
+    font-weight: bold;
+    color: #292929;
+}
+
+.guest button {
+    font-size: 12px;
+    border-radius: 200px;
+    border: 1px #909190 solid;
+    padding: 8px;
+    color: #363736;
+    background-color: transparent;
+}
+
+.follow-suggest-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
