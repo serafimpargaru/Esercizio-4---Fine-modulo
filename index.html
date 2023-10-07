@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <title>Medium clone</title>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <img src="./assets/Medium_(website)_logo.svg.png" alt="medium-logo" />
+
+      <div class="interactions">
+        <ion-icon name="search-outline"></ion-icon>
+        <ion-icon name="bookmarks-outline"></ion-icon>
+        <ion-icon name="notifications-outline"></ion-icon>
+        <button class="membership-btn">Resume membership</button>
+        <button class="account-btn">T</button>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="news">
+        <div class="sections">
+          <div>FOLLOWING</div>
+
+          <div id="bold">
+            <b>RECOMMENDED FOR YOU</b>
+          </div>
+        </div>
+        <!-- ---------------------------ARTICOLI--------------------------- -->
+        <!-- Articolo 1 -->
+        <div class="card-container">
+          <!-- Immagine profilo + nome autore -->
+          <div class="author">
+            <img src="./assets/1-account.png" alt="account-img" />
+            <div><b>Kolby Sisk</b> in <b>Udacity Eng & Data</b></div>
+          </div>
+          <!-- Titolo + contenuto articolo + immagine + statistiche -->
+          <div class="article-content">
+            <div class="content">
+              <a id="article-title" href="">
+                React state management in 2022 - Return of the Redux
+              </a>
+              <a href="">
+                At the beginning of the year if you told me I'd be publishing a
+                <br />
+                reccomandation to use Redux I woluld have laughed in you face.
+                Yet her...
+              </a>
+              <!-- Lista statistiche -->
+              <div class="statistics">
+                <div class="list">
+                  <ul>
+                    <li id="data">Dec 3</li>
+                    <li>4 min read</li>
+                    <li id="react">React</li>
+                    <li>Popular on Medium</li>
+                  </ul>
+                </div>
+                <!-- Bottoni statistiche -->
+                <div class="stat-btns">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-bookmark-plus"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                    />
+                    <path
+                      d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z"
+                    />
+                  </svg>
+                  <ion-icon name="ellipsis-horizontal"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <img src="./assets/1.png" alt="article1-img" />
+          </div>
+        </div>
+
+        <!-- Articolo 2-->
+        <div class="card-container">
+          <!-- Immagine profilo + nome autore -->
+          <div class="author">
+            <img src="./assets/1-account.png" alt="account-img" />
+            <div><b>Kolby Sisk</b> in <b>Udacity Eng & Data</b></div>
+          </div>
+          <!-- Titolo + contenuto articolo + immagine + statistiche -->
+          <div class="article-content">
+            <div class="content">
+              <a id="article-title" href="">
+                React state management in 2022 - Return of the Redux
+              </a>
+              <a href="">
+                At the beginning of the year if you told me I'd be publishing a
+                <br />
+                reccomandation to use Redux I woluld have laughed in you face.
+                Yet her...
+              </a>
+              <!-- Lista statistiche -->
+              <div class="statistics">
+                <div class="list">
+                  <ul>
+                    <li id="data">Dec 3</li>
+                    <li>4 min read</li>
+                    <li id="react">React</li>
+                    <li>Popular on Medium</li>
+                  </ul>
+                </div>
+                <!-- Bottoni statistiche -->
+                <div class="stat-btns">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-bookmark-plus"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                    />
+                    <path
+                      d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z"
+                    />
+                  </svg>
+                  <ion-icon name="ellipsis-horizontal"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <img src="./assets/2.png" alt="article1-img" />
+          </div>
+        </div>
+
+        <!-- Articolo 3-->
+        <div class="card-container">
+          <!-- Immagine profilo + nome autore -->
+          <div class="author">
+            <img src="./assets/1-account.png" alt="account-img" />
+            <div><b>Kolby Sisk</b> in <b>Udacity Eng & Data</b></div>
+          </div>
+          <!-- Titolo + contenuto articolo + immagine + statistiche -->
+          <div class="article-content">
+            <div class="content">
+              <a id="article-title" href="">
+                React state management in 2022 - Return of the Redux
+              </a>
+              <a href="">
+                At the beginning of the year if you told me I'd be publishing a
+                <br />
+                reccomandation to use Redux I woluld have laughed in you face.
+                Yet her...
+              </a>
+              <!-- Lista statistiche -->
+              <div class="statistics">
+                <div class="list">
+                  <ul>
+                    <li id="data">Dec 3</li>
+                    <li>4 min read</li>
+                    <li id="react">React</li>
+                    <li>Popular on Medium</li>
+                  </ul>
+                </div>
+                <!-- Bottoni statistiche -->
+                <div class="stat-btns">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-bookmark-plus"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                    />
+                    <path
+                      d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z"
+                    />
+                  </svg>
+                  <ion-icon name="ellipsis-horizontal"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <img src="./assets/3.png" alt="article1-img" />
+          </div>
+        </div>
+
+        <!-- Articolo 4-->
+        <div class="card-container">
+          <!-- Immagine profilo + nome autore -->
+          <div class="author">
+            <img src="./assets/1-account.png" alt="account-img" />
+            <div><b>Kolby Sisk</b> in <b>Udacity Eng & Data</b></div>
+          </div>
+          <!-- Titolo + contenuto articolo + immagine + statistiche -->
+          <div class="article-content">
+            <div class="content">
+              <a id="article-title" href="">
+                React state management in 2022 - Return of the Redux
+              </a>
+              <a href="">
+                At the beginning of the year if you told me I'd be publishing a
+                <br />
+                reccomandation to use Redux I woluld have laughed in you face.
+                Yet her...
+              </a>
+              <!-- Lista statistiche -->
+              <div class="statistics">
+                <div class="list">
+                  <ul>
+                    <li id="data">Dec 3</li>
+                    <li>4 min read</li>
+                    <li id="react">React</li>
+                    <li>Popular on Medium</li>
+                  </ul>
+                </div>
+                <!-- Bottoni statistiche -->
+                <div class="stat-btns">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-bookmark-plus"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                    />
+                    <path
+                      d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z"
+                    />
+                  </svg>
+                  <ion-icon name="ellipsis-horizontal"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <img src="./assets/4.png" alt="article1-img" />
+          </div>
+        </div>
+
+        <!-- Articolo 5-->
+        <div class="card-container">
+          <!-- Immagine profilo + nome autore -->
+          <div class="author">
+            <img src="./assets/1-account.png" alt="account-img" />
+            <div><b>Kolby Sisk</b> in <b>Udacity Eng & Data</b></div>
+          </div>
+          <!-- Titolo + contenuto articolo + immagine + statistiche -->
+          <div class="article-content">
+            <div class="content">
+              <a id="article-title" href="">
+                React state management in 2022 - Return of the Redux
+              </a>
+              <a href="">
+                At the beginning of the year if you told me I'd be publishing a
+                <br />
+                reccomandation to use Redux I woluld have laughed in you face.
+                Yet her...
+              </a>
+              <!-- Lista statistiche -->
+              <div class="statistics">
+                <div class="list">
+                  <ul>
+                    <li id="data">Dec 3</li>
+                    <li>4 min read</li>
+                    <li id="react">React</li>
+                    <li>Popular on Medium</li>
+                  </ul>
+                </div>
+                <!-- Bottoni statistiche -->
+                <div class="stat-btns">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-bookmark-plus"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                    />
+                    <path
+                      d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z"
+                    />
+                  </svg>
+                  <ion-icon name="ellipsis-horizontal"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <img src="./assets/5.png" alt="article1-img" />
+          </div>
+        </div>
+
+        <!-- Articolo 6-->
+        <div class="card-container">
+          <!-- Immagine profilo + nome autore -->
+          <div class="author">
+            <img src="./assets/1-account.png" alt="account-img" />
+            <div><b>Kolby Sisk</b> in <b>Udacity Eng & Data</b></div>
+          </div>
+          <!-- Titolo + contenuto articolo + immagine + statistiche -->
+          <div class="article-content">
+            <div class="content">
+              <a id="article-title" href="">
+                React state management in 2022 - Return of the Redux
+              </a>
+              <a href="">
+                At the beginning of the year if you told me I'd be publishing a
+                <br />
+                reccomandation to use Redux I woluld have laughed in you face.
+                Yet her...
+              </a>
+              <!-- Lista statistiche -->
+              <div class="statistics">
+                <div class="list">
+                  <ul>
+                    <li id="data">Dec 3</li>
+                    <li>4 min read</li>
+                    <li id="react">React</li>
+                    <li>Popular on Medium</li>
+                  </ul>
+                </div>
+                <!-- Bottoni statistiche -->
+                <div class="stat-btns">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-bookmark-plus"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                    />
+                    <path
+                      d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z"
+                    />
+                  </svg>
+                  <ion-icon name="ellipsis-horizontal"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <img src="./assets/6.png" alt="article1-img" />
+          </div>
+        </div>
+      </div>
+      <!-- -------------------------FINE ARTICOLI------------------------- -->
+      <div class="empty-space"></div>
+      <div id="second-empty-space" class="empty-space"></div>
+
+      <div class="social">
+        <div class="twitter-connection">
+          <div class="medium-twitter-container">
+
+            
+          </div>
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
