@@ -43,7 +43,7 @@ body {
 }
 
 .account-btn {
-  background-color: #F4511E;
+  background-color: #f4511e;
   font-size: 10pt;
   border-radius: 50%;
   color: white;
@@ -64,7 +64,7 @@ body {
 /* Parte destra */
 .news {
   width: 65%;
-  height: 1000vh;
+  height: fit-content;
   margin-left: 10%;
   display: flex;
   flex-direction: column;
@@ -165,6 +165,8 @@ body {
   gap: 20px;
   align-items: center;
   padding: 0;
+  color: #757575;
+  font-weight: normal;
 }
 
 li {
@@ -196,14 +198,15 @@ ul #react {
 .empty-space {
   width: 5%;
   max-width: 7%;
-  height: 3000vh;
   border-right: 1px #e6e6e6 solid;
 }
 
 .social {
   width: 25%;
-  height: 3000vh;
   margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 #second-empty-space {
@@ -277,75 +280,107 @@ a {
 }
 
 .topics-container {
-    display: flex;
-    flex-direction: column;
-    margin-block: 25px;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .sub-titles {
-    color: #292929;
-    font-size: 12px;
-    font-weight: bold;
+  color: #292929;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .categories {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 .categories button {
-    font-size: 12px;
-    padding-inline: 15px;
-    padding-block: 10px;
-    border-radius: 200px;
-    border: none;
-    background-color: #F2F2F2;
-    color: #292929;
-    cursor: pointer;
+  font-size: 12px;
+  padding-inline: 15px;
+  padding-block: 10px;
+  border-radius: 200px;
+  border: none;
+  background-color: #f2f2f2;
+  color: #292929;
+  cursor: pointer;
 }
 
 .guest {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .guest img {
-    width: 15%;
-    height: 15%;
+  width: 50px;
+  height: 50px;
 }
 
 .name-job {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
 }
 
 .name-job div {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 #name {
-    font-size: 12px;
-    font-weight: bold;
-    color: #292929;
+  font-size: 12px;
+  font-weight: bolder;
+  color: #292929;
 }
 
 .guest button {
-    font-size: 12px;
-    border-radius: 200px;
-    border: 1px #909190 solid;
-    padding: 8px;
-    color: #363736;
-    background-color: transparent;
+  font-size: 12px;
+  border-radius: 200px;
+  border: 1px #909190 solid;
+  padding: 8px;
+  color: #363736;
+  background-color: transparent;
 }
 
 .follow-suggest-container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.recently-saved-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.saved-article {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#link {
+  color: #69ad64;
+  text-decoration: none;
+}
+
+.end-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.end-options button {
+  border: none;
+  background-color: transparent;
+  color: #757575;
+  cursor: pointer;
+  padding: 0;
+  font-size: 12px;
 }
